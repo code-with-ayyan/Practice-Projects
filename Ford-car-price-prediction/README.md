@@ -1,16 +1,21 @@
-# 🚗 Ford Car Price Prediction using Linear Regression
+# 🚗 Ford Car Price Prediction using Multiple Regression Algorithms
 
 ## 📖 Overview
 
-This project predicts the selling price of Ford cars using **Linear Regression**. It demonstrates a complete Machine Learning workflow including data preprocessing, exploratory data analysis (EDA), feature engineering, feature selection, model training, evaluation, and visualization.
+This project predicts the selling prices of Ford cars using multiple regression algorithms. It demonstrates a complete end-to-end Machine Learning workflow, including data preprocessing, exploratory data analysis (EDA), feature engineering, feature selection, model training, evaluation, visualization, and model comparison.
 
-The goal of this project is to understand how different vehicle attributes influence the selling price and to build a regression model capable of predicting car prices accurately.
+Currently, the project includes:
+
+* Linear Regression
+* K-Nearest Neighbors (KNN) Regression
+
+The repository is designed to grow over time, and additional regression algorithms such as Decision Tree, Random Forest, Support Vector Regression (SVR), and Gradient Boosting will be added for performance comparison.
 
 ---
 
 # 📂 Dataset
 
-The dataset contains information about Ford cars such as:
+The dataset contains information about Ford vehicles with the following features:
 
 * Model
 * Year
@@ -20,11 +25,14 @@ The dataset contains information about Ford cars such as:
 * Tax
 * MPG
 * Engine Size
-* Price (Target Variable)
+
+**Target Variable**
+
+* Price
 
 ---
 
-# 🔄 Project Workflow
+# 🔄 Machine Learning Workflow
 
 1. Data Loading
 2. Exploratory Data Analysis (EDA)
@@ -35,63 +43,92 @@ The dataset contains information about Ford cars such as:
 7. Train-Test Split
 8. Feature Scaling using StandardScaler
 9. Feature Selection
-10. Linear Regression Model Training
+10. Model Training
 11. Model Evaluation
-12. Data Visualization
+12. Model Comparison
+13. Prediction Visualization
 
 ---
 
-# 📊 Exploratory Data Analysis
+# 🤖 Implemented Models
 
-The following visualizations were used:
+## 1. Linear Regression
 
-* Distribution Plots
-* Correlation Heatmap
-* Boxplots
-* Scatter Plots
-* Feature Correlation Analysis
+A baseline regression model used to establish initial performance.
 
----
+### Performance
 
-# ⚙️ Data Preprocessing
-
-The preprocessing pipeline includes:
-
-* Handling Outliers
-* Encoding Categorical Variables
-* Standard Scaling
-* Train-Test Split
-* Feature Selection using Correlation and Mutual Information
+| Metric      |            Value |
+| ----------- | ---------------: |
+| R² Score    |       **0.8474** |
+| Adjusted R² |       **0.8458** |
+| MAE         |      **1368.21** |
+| MSE         | **3,410,730.70** |
+| RMSE        |      **1846.82** |
 
 ---
 
-# 🤖 Machine Learning Model
+## 2. K-Nearest Neighbors (KNN) Regression
 
-**Algorithm Used:**
+A distance-based regression algorithm that predicts prices by averaging the target values of the K nearest neighbors.
 
-* Linear Regression
+### Performance
+
+| Metric      |            Value |
+| ----------- | ---------------: |
+| R² Score    |       **0.9314** |
+| Adjusted R² |       **0.9306** |
+| MAE         |       **846.48** |
+| MSE         | **1,534,395.09** |
+| RMSE        |      **1238.71** |
 
 ---
 
-# 📈 Model Evaluation
+# 📊 Model Comparison
 
-The model was evaluated using:
+| Model             |         R² | Adjusted R² |         MAE |        RMSE |
+| ----------------- | ---------: | ----------: | ----------: | ----------: |
+| Linear Regression | **0.8474** |  **0.8458** | **1368.21** | **1846.82** |
+| KNN Regression    | **0.9314** |  **0.9306** |  **846.48** | **1238.71** |
 
-* R² Score
-* Adjusted R² Score
-* Mean Absolute Error (MAE)
-* Mean Squared Error (MSE)
-* Root Mean Squared Error (RMSE)
+Among the currently implemented models, **KNN Regression achieved the best performance**, producing a higher R² Score and lower prediction errors than Linear Regression.
 
 ---
 
 # 📷 Visualizations
 
-Project visualizations include:
+## Linear Regression
 
-* Correlation Heatmap
 * Actual vs Predicted Prices
-* Residual Distribution Plot
+* Residual Distribution
+
+## KNN Regression
+
+* Actual vs Predicted Prices
+* Residual Distribution
+
+---
+
+# 📁 Project Structure
+
+```text
+Ford-Car-Price-Prediction/
+
+├── ford.csv
+├── ford.ipynb
+│
+├── images_linear_model/
+│   ├── actual_vs_linear_model.png
+│   └── residual_distribution_linear_model.png
+│
+├── images_KNN_model/
+│   ├── actual_vs_KNN_model.png
+│   └── residual_distribution_KNN_model.png
+│
+│
+├── README.md
+└── requirements.txt
+```
 
 ---
 
@@ -107,115 +144,33 @@ Project visualizations include:
 
 ---
 
-# 📁 Project Structure
-
-```text
-Ford-Car-Price-Prediction/
-│
-├── ford.csv
-├── ford.ipynb
-├── images/
-│   ├── actual_vs_predicted_prices.png
-│   ├── correlation_heatmap.png
-│   └── residual_distribution.png
-├── requirements.txt
-└── README.md
-```
-
----
-
-# 🚀 Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/code-with-ayyan/Ford-Car-Price-Prediction.git
-```
-
-Move into the project directory:
-
-```bash
-cd Ford-Car-Price-Prediction
-```
-
-Create a virtual environment (Recommended):
-
-**Linux / macOS**
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
-**Windows**
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-Install the required dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-# ▶️ Usage
-
-Launch Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```text
-ford.ipynb
-```
-
-Run all notebook cells sequentially to reproduce the complete Machine Learning workflow.
-
----
-
 # 🎯 Learning Outcomes
 
-Through this project, I learned:
+Through this project, I gained practical experience in:
 
-* Data Cleaning
 * Exploratory Data Analysis (EDA)
+* Data Cleaning
 * Feature Engineering
-* Feature Scaling
 * Feature Selection
+* Feature Scaling
 * Linear Regression
-* Model Evaluation
-* Building an end-to-end Machine Learning pipeline
+* KNN Regression
+* Regression Model Evaluation
+* Model Comparison
+* Building End-to-End Machine Learning Pipelines
 
 ---
 
-# 🚀 Future Improvements
+# 🚀 Future Work
 
-* Ridge Regression
-* Lasso Regression
-* Elastic Net
+The following regression algorithms will be implemented and compared in future updates:
+
 * Decision Tree Regressor
 * Random Forest Regressor
+* Support Vector Regressor (SVR)
+* Gradient Boosting Regressor
 * XGBoost Regressor
-* Hyperparameter Tuning
-
----
-
-# 🤝 Contributing
-
-Contributions, suggestions, and improvements are welcome. Feel free to fork this repository, create a new branch, and submit a pull request.
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
+* AdaBoost Regressor
 
 ---
 
@@ -223,4 +178,4 @@ This project is licensed under the MIT License.
 
 **Ayyan Ahmed**
 
-Machine Learning & AI Enthusiast
+Aspiring AI/ML Engineer | Building end-to-end Machine Learning projects and implementing machine learning algorithms from scratch to strengthen mathematical understanding and practical skills.
