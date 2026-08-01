@@ -41,6 +41,7 @@ The dataset contains customer information collected from a Portuguese banking in
 - Logistic Regression
 - K-Nearest Neighbors (KNN)
 - Gaussian Naive Bayes
+- Decision Tree CLassifier
 
 ---
 
@@ -83,6 +84,7 @@ Bank_Marketing_Classification/
 | Logistic Regression | **81.98%** | **78.49%** | **83.00%** | **80.69%** |
 | KNN Classifier | **81.32%** | **76.29%** | **83.36%** | **79.67%** |
 | Gaussian Naive Bayes | **70.58%** | **55.29%** | **76.87%** | **64.32%** |
+| Decision Tree Classifier | **79.50%** | **77.81%** | **79.11%** | **78.45%** |
 
 ---
 
@@ -96,7 +98,6 @@ This project provides a practical comparison of multiple classification algorith
 
 ## Future Improvements
 
-- Decision Tree Classifier
 - Random Forest Classifier
 - Support Vector Machine (SVM)
 - AdaBoost Classifier
