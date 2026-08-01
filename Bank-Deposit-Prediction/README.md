@@ -84,7 +84,7 @@ Bank_Marketing_Classification/
 | Logistic Regression | **81.98%** | **78.49%** | **83.00%** | **80.69%** |
 | KNN Classifier | **81.32%** | **76.29%** | **83.36%** | **79.67%** |
 | Gaussian Naive Bayes | **70.58%** | **55.29%** | **76.87%** | **64.32%** |
-| Decision Tree Classifier | **79.50%** | **77.81%** | **79.11%** | **78.45%** |
+| Decision Tree Classifier | **82.46%** |	**84.49%** |	**80.05%** |	***82.21%** |
 
 ---
 
