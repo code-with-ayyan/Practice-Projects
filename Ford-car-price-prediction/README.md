@@ -82,6 +82,21 @@ A distance-based regression algorithm that predicts prices by averaging the targ
 | MSE         | **1,534,395.09** |
 | RMSE        |      **1238.71** |
 
+## 3. Decision Tree Regressor 
+
+A conditional based algorithm that predict price on the bases of certified conditions
+in input data.
+
+### Performance 
+
+| Metric      |            Value |
+| ----------- | ---------------: |
+| R² Score    |       **0.8034** |
+| Adjusted R² |       **0.8014** |
+| MAE         |       **1544.89** |
+| MSE         | **4,393,163.98** |
+| RMSE        |      **2095.98** |
+
 ---
 
 # 📊 Model Comparison
@@ -90,6 +105,7 @@ A distance-based regression algorithm that predicts prices by averaging the targ
 | ----------------- | ---------: | ----------: | ----------: | ----------: |
 | Linear Regression | **0.8474** |  **0.8458** | **1368.21** | **1846.82** |
 | KNN Regression    | **0.9314** |  **0.9306** |  **846.48** | **1238.71** |
+| Decision Tree Regressor | **0.8034** |  **0.8014** | **1544.89** | **2095.98** |
 
 Among the currently implemented models, **KNN Regression achieved the best performance**, producing a higher R² Score and lower prediction errors than Linear Regression.
 
@@ -106,6 +122,12 @@ Among the currently implemented models, **KNN Regression achieved the best perfo
 
 * Actual vs Predicted Prices
 * Residual Distribution
+
+## Decision Tree Regressor 
+
+* Actual vs Predicted Prices
+* Residual Distribution
+
 
 ---
 
@@ -124,6 +146,9 @@ Ford-Car-Price-Prediction/
 ├── images_KNN_model/
 │   ├── actual_vs_KNN_model.png
 │   └── residual_distribution_KNN_model.png
+├── images_DT_model/
+│   ├── actual_vs_DT_model.png
+│   └── residual_distribution_DT_model.png
 │
 │
 ├── README.md
@@ -165,7 +190,6 @@ Through this project, I gained practical experience in:
 
 The following regression algorithms will be implemented and compared in future updates:
 
-* Decision Tree Regressor
 * Random Forest Regressor
 * Support Vector Regressor (SVR)
 * Gradient Boosting Regressor
