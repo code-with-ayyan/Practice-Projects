@@ -1,4 +1,4 @@
-# ❤️ Heart Disease Prediction
+# ❤️ Heart Stroke Risk Prediction
 
 A Machine Learning web application that predicts the risk of heart disease based on patient medical information.
 
@@ -137,8 +137,8 @@ heart-disease-prediction/
 Clone the repository:
 
 ```bash
-git clone <your-repository-url>
-cd heart-disease-prediction
+git clone (https://github.com/code-with-ayyan/Heart-Stroke-Risk-Prediction)
+cd Heart-Stroke-Risk-Prediction
 ```
 
 Install the required dependencies:
