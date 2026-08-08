@@ -137,8 +137,24 @@ st.markdown(
     }
 
 
-    input {
+    /* Number input text — especially important on mobile */
+    div[data-testid="stNumberInput"] input {
         color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        caret-color: #ffffff !important;
+        background-color: #111111 !important;
+    }
+
+    div[data-testid="stNumberInput"] input::placeholder {
+        color: #71717a !important;
+        -webkit-text-fill-color: #71717a !important;
+    }
+
+    /* General input text */
+    div[data-baseweb="input"] input {
+        color: #ffffff !important;
+        -webkit-text-fill-color: #ffffff !important;
+        caret-color: #ffffff !important;
     }
 
 
