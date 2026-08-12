@@ -273,10 +273,7 @@ with st.container(border=True):
     with col2:
         children = st.number_input(
             "Number of Children",
-            min_value=0,
-            max_value=10,
-            value=0,
-            step=1
+            value=0
         )
 
         smoker = st.selectbox(
