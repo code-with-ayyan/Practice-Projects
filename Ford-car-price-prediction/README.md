@@ -8,7 +8,7 @@ The project compares multiple regression algorithms, evaluates their performance
 
 🔗 **Live Application:**
 
-https://ford-car-price-prediction.streamlit.app
+https://ford-car-price-prediction-a.streamlit.app
 
 ## 📌 Project Overview
 
@@ -269,7 +269,7 @@ The application is deployed using **Streamlit Community Cloud**.
 
 🔗 **Live Application:**
 
-https://ford-car-price-prediction.streamlit.app
+https://ford-car-price-prediction-a.streamlit.app
 
 ## 👨‍💻 Author
 
