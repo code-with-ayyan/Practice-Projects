@@ -23,6 +23,7 @@ model = jl.load("pickles/model.pkl")
 expected_columns = jl.load("pickles/columns.pkl")
 scalar = jl.load("pickles/scalar.pkl")
 columns_to_scale = jl.load("pickles/columns_to_scale.pkl")
+pipeline = jl.load("pickles/svm_pipeline.pkl")
 
 
 # =========================================================
@@ -630,20 +631,20 @@ if st.button(
     # SCALE NUMERICAL FEATURES
     # ---------------------------------------------
 
-    input_df[
-        columns_to_scale
-    ] = scalar.transform(
-        input_df[
-            columns_to_scale
-        ]
-    )
+    # input_df[
+    #     columns_to_scale
+    # ] = scalar.transform(
+    #     input_df[
+    #         columns_to_scale
+    #     ]
+    # )
 
 
     # ---------------------------------------------
     # PREDICTION
     # ---------------------------------------------
 
-    prediction = model.predict(
+    prediction = pipeline.predict(
         input_df
     )[0]
 
