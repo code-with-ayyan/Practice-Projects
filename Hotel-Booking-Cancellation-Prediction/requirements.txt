@@ -1,0 +1,16 @@
+# Backend dependencies for backend/app.py
+#
+# scikit-learn MUST stay at 1.6.1: pipeline.pkl was trained and saved with that
+# exact version. Do not upgrade it (1.7 / 1.8+ can fail to load the pickle or
+# silently change behaviour).
+#
+# If you have the exact versions from your training environment, run
+# `pip freeze` there and pin numpy / pandas / joblib / scipy to those versions.
+
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+pydantic>=2.7,<3.0
+joblib>=1.3
+numpy>=1.26,<3.0
+pandas>=2.1,<3.0
+scikit-learn==1.6.1
