@@ -1,0 +1,40 @@
+/* Design tokens
+   Palette: harbour-fog neutrals, deep petrol as the single brand colour, and a
+   restrained brass accent. Green / red are reserved for prediction outcomes
+   and error states only. */
+:root {
+  --fog: #edf1f3;
+  --paper: #fbfcfc;
+  --white: #ffffff;
+
+  --ink: #10222a;
+  --ink-soft: #4b606a;
+  --placeholder: #8797a0;
+
+  --line: #d8e0e4;
+  --line-strong: #c1ced5;
+
+  --petrol: #0f4a57;
+  --petrol-dark: #0b3843;
+  --petrol-tint: #e4eff1;
+  --petrol-deep: #0b2a33;
+  --brass: #ead9b2;
+
+  --safe: #17704d;
+  --safe-tint: #e5f3ec;
+  --safe-line: #b5dac6;
+  --risk: #b2352d;
+  --risk-tint: #fbe9e7;
+  --risk-line: #efb8b2;
+
+  --font-display: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-ui: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  --radius-card: 18px;
+  --radius-tile: 12px;
+  --radius-control: 10px;
+
+  --shadow-card: 0 1px 2px rgba(16, 34, 42, 0.05),
+    0 14px 32px -18px rgba(16, 34, 42, 0.18);
+  --shadow-pop: 0 18px 40px -14px rgba(16, 34, 42, 0.28);
+}
