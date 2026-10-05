@@ -6,7 +6,7 @@ The project combines a trained Scikit-learn Machine Learning pipeline, a FastAPI
 
 ## 🌐 Live Application
 
-**Live URL:** http://56.228.33.7
+**Live URL:** [http://56.228.33.7](https://ayyan-hotel-booking.duckdns.org/)
 
 The application is currently running through the AWS EC2 public IP address.
 
